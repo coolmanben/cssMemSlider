@@ -67,7 +67,14 @@ article img{
 	height: 15px;
 	background: #6ea3ca;
     border: solid #6ea3ca;
+    margin: 5px;
 }
+
+span{
+    padding: 15px;
+
+}
+
 
 .pannel-switch{ 
 	margin: 0 0 0;
@@ -101,12 +108,14 @@ article img{
 .slider-text{
    overflow: hidden;
    position: relative;
+   
 }
 
 .text-box{
     position: relative;
     transform: translateX(1000px);
     height: 25px;
+    text-align: left;
 }
 
 #switch1:checked ~ .slider-footer .slider-text .text-slide-1{
@@ -143,9 +152,7 @@ article img{
     top: -100px;
 }
 
-
-
-@media (max-width: 768px) {
+@media only screen and (max-device-width: 600px)  {
     .slider-footer{
         display: flex;
         flex-direction: column-reverse;
@@ -154,4 +161,8 @@ article img{
     .slider-text{
         margin-top: 20px;
     }
+    .text-box{
+        text-align: center;
+    }
+
 }
